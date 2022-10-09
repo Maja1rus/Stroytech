@@ -1,0 +1,259 @@
+.header {
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background-color: $grey;
+}
+
+.header__corner {
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  width: 272px;
+  height: 144px;
+  transition: opacity 0.3s ease-out;
+  opacity: 1;
+  background: url('../img/corner.png') 0 0 no-repeat;
+  background-size: cover;
+  &.hidden {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__div {
+  width: 20px;
+}
+
+.header__logo {
+  z-index: 13;
+  display: block;
+  width: fit-content;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.header__upper {
+  display: none;
+}
+
+.header__info {
+  display: none;
+}
+
+.header__tel {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: $white;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+  &:active {
+    color: $black;
+  }
+}
+
+.header__burger,
+.header__close {
+  z-index: 13;
+  width: 35px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__burger {
+  padding: 5px;
+}
+
+.header__close {
+  svg {
+    width: auto;
+    height: 23px;
+  }
+}
+
+.header__item {
+  position: relative;
+  padding-left: 0;
+}
+
+.header__nav {
+  padding: 14px;
+  background-color: $grey;
+  &.hidden {
+    display: none;
+  }
+  z-index: 15;
+}
+
+.header__nav-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 21px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+.header__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__item {
+  margin-bottom: 34px;
+  text-align: center;
+  &::before {
+    display: none;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.header__link {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $white;
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+  &:active {
+    color: $black;
+  }
+}
+
+@media(min-width: $widthTablet) {
+  .header {
+    padding-top: 33px;
+    padding-bottom: 30px;
+  }
+  .header__nav {
+    position: absolute;
+    right: -40px;
+    padding-top: 42px;
+  }
+  .header__div {
+    display: none;
+  }
+  .header__corner {
+    position: absolute;
+    width: 416px;
+    height: 300px;
+    background: url('../img/corner-d.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__upper {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .header__left {
+    display: flex;
+    align-items: start;
+  }
+  .header__logo {
+    display: flex;
+    height: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16.4px;
+    color: $white;
+    flex-wrap: wrap;
+    align-items: stretch;
+    img {
+      width: 280px;
+      height: 47px;
+      margin-bottom: 16px;
+    }
+  }
+  .header__info {
+    display: block;
+    width: 300px;
+    line-height: 19px;
+    margin: 0;
+    // color: $red;
+  }
+  .header__tel {
+    text-align: right;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $grey;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .header__item {
+    margin: 0 10px;
+    margin-bottom: 10px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .header__nav-item {
+    text-align: start;
+  }
+}
+
+@media(min-width: $widthDesktop) {
+  .header__logo {
+    max-width: 280px;
+  }
+  .header__left {
+    padding-left: 135px;
+  }
+}
+
+@media(min-width:1450px) {
+  .header__corner {
+    width: 515px;
+    height: 388px;
+    background-size: cover;
+  }
+}

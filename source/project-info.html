@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="СИИР. Производство столярных изделий">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>СИИР. Производство столярных изделий</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/casper-bold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="header__corner"></div>
+        <div class="container header__container">
+            <div class="header__left">
+                <div class="header__div"></div>
+                <a class="header__logo" href="/">
+                    <img width="143" height="24" src="img/logo.png" alt="Логотип компании">
+                    <p class="header__info">15 лет создаем эффективную среду для плодотворной работы и отдыха</p>
+                </a>
+                <button class="header__burger" type="button">
+                    <svg class="header__svg" width="20" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <button class="header__close header__close--closed" type="button">
+                    <svg class="header__svg" width="20" height="20">
+                        <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__right">
+                <div class="header__upper">
+
+                    <a class="header__calculator calculator" href="" title="Расчет стоимости услуг онлайн">
+                        <svg width="30" height="33">
+                            <use xlink:href="img/sprite_auto.svg#icon-calculator"></use>
+                        </svg>
+                        <span>Расчет стоимости услуг онлайн</span>
+                    </a>
+
+                    <div class="header__contacts">
+                        <a class="header__tel" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+                        <a class="header__tel" href="tel:+78124385525" title="+7 (812) 412-85-85">+7 (812) 438-55-25</a>
+                    </div>
+
+                </div>
+                <nav class="header__lower nav nav--hidden">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <div class="header__link open-submenu" href="#" title="Услуги">
+                                <a href="services.html">Услуги </a>
+                                <svg width="13" height="7">
+                                    <use xlink:href="img/sprite_auto.svg#icon-open"></use>
+                                </svg></div>
+                            <div class="header__nav hidden">
+                                <a class="header__nav-item" title="Общестроительные
+                работы" href="#">Общестроительные работы</a>
+                                <a class="header__nav-item" title="Монтаж и ремонт
+                инженерных систем" href="#">Монтаж и ремонт
+                                    инженерных систем</a>
+                                <a class="header__nav-item" title="Разработка дизайна и
+                проектных решений" href="#">Разработка дизайна и
+                                    проектных решений</a>
+                                <a class="header__nav-item" title="Отделочные
+                работы" href="#">Отделочные
+                                    работы</a>
+                                <a class="header__nav-item" title="Генеральный
+                подряд" href="#">Генеральный
+                                    подряд</a>
+                                <a class="header__nav-item" title="Клининг" href="#">Клининг</a>
+                            </div>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="О компании">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="Портфолио">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="Отзывы">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="Контакты">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="projects bg">
+            <div class="container">
+                <h1 class="projects__heading heading">Реализованные проекты</h1>
+                <div class="projects__list">
+                    <div class="projects__item">
+                        <div class="projects__container projects-object">
+                            <div class="projects__text">
+                                <h2 class="projects__sub-heading">Гостиницы</h2>
+                                <p class="projects__p">Во время реконструкции были произведены отделочные и
+                                    общестроительные работы, работы по замене всех инженерных сетей, ремонту кровель,
+                                    фасадов, стилобатов и благоустройству территорий на площади свыше 25 000 м2</p>
+
+                            </div>
+                            <div class="projects-object__wrap">
+                                <div class="projects-object__item">
+                                    <h3 class="projects-works__title">Площадь м2</h3>
+                                    <p class="projects__p">187</p>
+                                </div>
+                                <div class="projects-object__item">
+                                    <h3 class="projects-works__title">Стоимость объекта</h3>
+                                    <p class="projects__p">300 000 руб</p>
+                                </div>
+                                <div class="projects-object__item">
+                                    <h3 class="projects-works__title">Вид работ</h3>
+                                    <p class="projects__p"><a href="">Косметический ремонт</a> помещений связанный в
+                                        основном с
+                                        отделочными работами. </p>
+                                </div>
+                            </div>
+
+
+                            <button type="button" class="button popup__open"><a href="#" id=""></a> Хочу так же</button>
+
+
+                            <!-- POPUP -->
+                            <div class="popup">
+                                <div class="popup__content">
+                                    <div class="popup__body">
+                                        <div class="popup-form__title">
+                                            <p class="heading">Отправьте заявку</p>
+                                            <p class="projects__p">и мы свяжемся с Вами в течении 30 минут</p>
+                                        </div>
+                                        <button type="button" class="popup__close"><span
+                                                class="popup__close--icon"></span></button>
+                                        <div class="form-wrapper">
+                                            <form class="form">
+                                                <input class="form__input" type="text" name="name" required=""
+                                                    placeholder="Ваше имя">
+                                                <input class="form__input" id="tel" type="tel" name="phone" required=""
+                                                    placeholder="Ваш номер телефона">
+                                                <div class="form__button-container">
+                                                    <label class="form__label">
+                                                        <input class="checkbox" type="checkbox" name="type" id="type"
+                                                            value="agree">
+                                                        <span class="checkbox-indicator"></span>
+                                                        <span class="checkbox-info">Я даю согласие <a href=""
+                                                                title="обработку персональных данных">на обработку
+                                                                персональных данных</a></span>
+                                                    </label>
+                                                    <button type="submit"
+                                                        class="form__button button"><span>Отправить</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // POPUP -->
+
+                            <section class="modal modal--closed modal--success" data-modal-content="2">
+                                <div class="modal__overlay">
+                                    <div class="modal__container">
+                                        <button class="modal__button-close" type="button"
+                                            aria-label="Закрыть модальное окно"></button>
+                                        <img class="modal__tick" src="img/icons/icon-tick.svg" width="114" height="114"
+                                            alt="Значок галка">
+                                        <h2 class="modal__heading heading">Письмо отправлено!</h2>
+                                        <p class="modal__info">Наш специалист вам перезвонит</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="modal modal--closed modal--fail" data-modal-content="3">
+                                <div class="modal__overlay">
+                                    <div class="modal__container">
+                                        <button class="modal__button-close" type="button"
+                                            aria-label="Закрыть модальное окно"></button>
+                                        <h2 class="modal__heading heading">Извините, заявка не отправлена</h2>
+                                        <p class="modal__info">Позвоните нам по номеру +7 (812) 412-85-85</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="projects__images lightgallery container">
+                            <a class="projects__img" href="img/project-1-1.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-1.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-2.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-2.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-3.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-3.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-4.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-4.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-5.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-5.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-6.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-6.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-7.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-7.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-8.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-8.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-9.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-9.jpg" width="90" height="135">
+                            </a>
+                            <a class="projects__img" href="img/project-1-10.jpg">
+                                <div class="overlay">
+                                    <svg width="70" height="70">
+                                        <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
+                                    </svg>
+                                </div>
+                                <img alt=".." src="img/project-1-10.jpg" width="90" height="135">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__corner"></div>
+        <div class="container footer__container">
+            <div class="footer__upper">
+                <div class="footer__left">
+
+                    <a class="footer__logo" href="/">
+                        <img width="214" height="36" src="img/logo.png" alt="Логотип компании">
+                    </a>
+                    <div class="footer__contacts">
+                        <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+                        <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 412-85-85">+7 (812) 438-55-25</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <nav class="nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <div class="footer__link" href="#" title="Услуги">Услуги</div>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="О компании">О компании</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="Портфолио">Портфолио</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="Отзывы">Отзывы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__lower">
+                © Copyright 2021
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

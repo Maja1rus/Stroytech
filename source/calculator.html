@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="СИИР. Производство столярных изделий">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>СИИР. Производство столярных изделий</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/casper-bold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__corner"></div>
+        <div class="container header__container">
+            <div class="header__left">
+                <div class="header__div"></div>
+                <a class="header__logo" href="/">
+                    <img width="143" height="24" src="img/logo.png" alt="Логотип компании">
+                    <p class="header__info">15 лет создаем эффективную среду для плодотворной работы и отдыха</p>
+                </a>
+                <button class="header__burger" type="button">
+                    <svg class="header__svg" width="20" height="15">
+                        <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <button class="header__close header__close--closed" type="button">
+                    <svg class="header__svg" width="20" height="20">
+                        <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__right">
+                <div class="header__upper">
+
+                    <a class="header__calculator calculator" href="" title="Расчет стоимости услуг онлайн">
+                        <svg width="30" height="33">
+                            <use xlink:href="img/sprite_auto.svg#icon-calculator"></use>
+                        </svg>
+                        <span>Расчет стоимости услуг онлайн</span>
+                    </a>
+
+                    <div class="header__contacts">
+                        <a class="header__tel" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+                        <a class="header__tel" href="tel:+78124385525" title="+7 (812) 412-85-85">+7 (812) 438-55-25</a>
+                    </div>
+
+                </div>
+                <nav class="header__lower nav nav--hidden">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <div class="header__link open-submenu" href="#" title="Услуги">
+                                <a href="services.html">Услуги </a>
+                                <svg width="13" height="7">
+                                    <use xlink:href="img/sprite_auto.svg#icon-open"></use>
+                                </svg></div>
+                            <div class="header__nav hidden">
+                                <a class="header__nav-item" title="Общестроительные
+                работы" href="#">Общестроительные работы</a>
+                                <a class="header__nav-item" title="Монтаж и ремонт
+                инженерных систем" href="#">Монтаж и ремонт
+                                    инженерных систем</a>
+                                <a class="header__nav-item" title="Разработка дизайна и
+                проектных решений" href="#">Разработка дизайна и
+                                    проектных решений</a>
+                                <a class="header__nav-item" title="Отделочные
+                работы" href="#">Отделочные
+                                    работы</a>
+                                <a class="header__nav-item" title="Генеральный
+                подряд" href="#">Генеральный
+                                    подряд</a>
+                                <a class="header__nav-item" title="Клининг" href="#">Клининг</a>
+                            </div>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="О компании">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="Портфолио">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="Отзывы">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#" title="Контакты">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="calculator-main bg">
+            <div class="container">
+                <h1 class="heading">Калькулятор стоимости <br>ремонта</h1>
+                <form class="calculator-main__wrap" id="calculator">
+                    <div class="calculator-main__list">
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Метраж помещения, м2</span>
+                            <div class="calculator-main__input-number">
+                                <button type="button" class="input-number__minus">–</button>
+                                <input type="number" class="input-number" value="10" min="1" max="1000" placeholder="1"
+                                    name="metre">
+                                <button type="button" class="input-number__plus">+</button>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Здание</span>
+                            <div class="calculator-main__option">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="building" value="Новостройка"
+                                        checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Новостройка</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="building" value="Вторичка">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Вторичка</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Высота потолков</span>
+                            <div class="calculator-main__option calculator-main__option--columns">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="height" value="2.5"
+                                        checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">2.5</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="height" value="2.7">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">2.7</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="height" value="3">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">3</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="height" value="3.5">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">3.5</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Вид ремонта</span>
+                            <div class="calculator-main__option calculator-main__option--columns">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-repair" value=""
+                                        checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Косметический</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-repair" value="Черновой">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Черновой</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-repair"
+                                        value="Капитальный">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Капитальный</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-repair"
+                                        value="Дизайнерский">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Дизайнерский</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-repair" value="Евроремонт">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Евроремонт</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-repair" value="Элитный">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Элитный</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Перепланировка</span>
+                            <div class="calculator-main__option">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="replanning" value="Без"
+                                        checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Без</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="replanning" value="Частичная">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Частичная</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Количество комнат</span>
+                            <div class="calculator-main__option calculator-main__option--columns">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="rooms" value="1"
+                                        checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">1</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="rooms" value="2">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">2</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="rooms" value="3">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">3</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="rooms" value="4">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">4</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Тип помещения</span>
+                            <div class="calculator-main__option calculator-main__option--columns">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-rooms" value="Ресторан"
+                                        checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Ресторан</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-rooms"
+                                        value="Салон красоты">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Салон красоты</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-rooms" value="Магазин">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Магазин</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-rooms" value="Офис">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Офис</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="type-rooms" value="Другое">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Другое</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator-main__item">
+                            <span class="calculator-main__title">Выравнивание стен</span>
+                            <div class="calculator-main__option">
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="wall-alignment"
+                                        value="Не выравнивать" checked="check">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Не выравнивать</span>
+                                </label>
+                                <label class="input-radio">
+                                    <input type="radio" class="input-radio__real" name="wall-alignment"
+                                        value="Выравнивать">
+                                    <span class="input-radio__fake"></span>
+                                    <span class="calculator-main__subtitle">Выравнивать</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-main__result">
+                        <div class="calculator-main__text">
+                            <p>Примерная стоимость</p>
+                            <div class="calculator-main__price"><span>10 000</span> руб</div>
+                        </div>
+                        <button type="button" class="button popup__open"><a href="#" id=""></a>Отправить</button>
+                    </div>
+                    <!-- POPUP -->
+                    <div class="popup">
+                        <div class="popup__content">
+                            <div class="popup__body">
+                                <div class="popup-form__title">
+                                    <p class="heading">Отправьте заявку</p>
+                                    <p class="projects__p">и мы свяжемся с Вами в течении 30 минут</p>
+                                </div>
+                                <button type="button" class="popup__close"><span
+                                        class="popup__close--icon"></span></button>
+                                <div class="form-wrapper">
+                                    <form class="form" id="calculator">
+                                        <input class="form__input" type="text" name="name" required=""
+                                            placeholder="Ваше имя">
+                                        <input class="form__input" id="tel" type="tel" name="phone" required=""
+                                            placeholder="Ваш номер телефона">
+                                        <div class="form__button-container">
+                                            <label class="form__label">
+                                                <input class="checkbox" type="checkbox" name="type" id="type"
+                                                    value="agree">
+                                                <span class="checkbox-indicator"></span>
+                                                <span class="checkbox-info">Я даю согласие <a href="#"
+                                                        title="обработку персональных данных">на обработку
+                                                        персональных данных</a></span>
+                                            </label>
+                                            <button type="submit" from="calculator" class="form__button button"><span>Отправить</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // POPUP -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__corner"></div>
+        <div class="container footer__container">
+            <div class="footer__upper">
+                <div class="footer__left">
+
+                    <a class="footer__logo" href="/">
+                        <img width="214" height="36" src="img/logo.png" alt="Логотип компании">
+                    </a>
+                    <div class="footer__contacts">
+                        <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+                        <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 412-85-85">+7 (812) 438-55-25</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <nav class="nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <div class="footer__link" href="#" title="Услуги">Услуги</div>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="О компании">О компании</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="Портфолио">Портфолио</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="Отзывы">Отзывы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__lower">
+                © Copyright 2021
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal modal--closed modal--success" data-modal-content="2">
+        <div class="modal__overlay">
+            <div class="modal__container">
+                <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
+                <img class="modal__tick" src="img/icons/icon-tick.svg" width="114" height="114" alt="Значок галка">
+                <h2 class="modal__heading heading">Письмо отправлено!</h2>
+                <p class="modal__info">Наш специалист вам перезвонит</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal modal--closed modal--fail" data-modal-content="3">
+        <div class="modal__overlay">
+            <div class="modal__container">
+                <button type="submit" class="modal__button-close" type="button"
+                    aria-label="Закрыть модальное окно"></button>
+                <h2 class="modal__heading heading">Извините, заявка не отправлена</h2>
+                <p class="modal__info">Позвоните нам по номеру +7 (812) 412-85-85</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

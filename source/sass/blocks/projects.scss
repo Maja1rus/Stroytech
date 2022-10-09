@@ -1,0 +1,146 @@
+.projects__heading {
+  margin-top: 0;
+}
+
+.projects__sub-heading {
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.projects__p {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 14px
+}
+
+.projects__examples {
+  display: grid;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects__example {
+  position: relative;
+  padding-left: 25px;
+  margin: 0;
+  font-size: 18px;
+  font-size: 16px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-color: $red;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.projects__images {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.projects__img {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      fill: transparent;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+.projects__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.projects__item {
+  margin-bottom: 60px;
+}
+
+
+@media(min-width:500px) {
+  .projects__images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width:$widthDesktop) {
+  .projects__images {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .projects__examples {
+    display: grid;
+    margin-bottom: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .projects__example {
+    margin-bottom: 0;
+  }
+
+  .projects__container {
+    display: grid;
+    margin-bottom: 80px;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects__sub-heading {
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+
+  .projects__p {
+    max-width: 441px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+
+@media screen and(max-width:1024px) {
+  .projects__examples {
+    padding-bottom: 40px;
+  }
+}

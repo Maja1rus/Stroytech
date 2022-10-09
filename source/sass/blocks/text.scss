@@ -1,0 +1,125 @@
+.text {    
+    ul {
+        display: grid;
+        gap: 12px;
+        margin-top: 0;
+        padding: 0px;
+        list-style: none;
+    }
+    
+    li {
+        position: relative;
+        margin: 0;
+        padding-left: 25px;
+        font-size: 16px;
+        line-height: 1.5;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background-color: $red;
+        }
+    }
+ 
+
+    h2 {
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 31px;
+        font-weight: 500;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    h4 {
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    h5, h6 {
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    table {
+        margin-bottom: 16px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td,
+    th {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 18px;
+        font-size: 16px;
+        line-height: 18px;
+        border: 1px solid #828282;
+    }
+
+    th {
+        background-color: #e5e5e5;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    p + h2,
+    p + h3, 
+    p + h4, 
+    p + h5,
+    p + h6,
+    table + h2,
+    table + h3,
+    table + h4,
+    table + h5 {
+        padding-top: 44px;
+    }
+
+    h2 + h3,
+    h3 + h4, 
+    h4 + h5,
+    h5 + h6 {
+        padding-top: 20px;
+    }
+
+    img {
+        max-width: 50%;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 24px;
+    }
+
+    @media (min-width: 768px) {
+        li,
+        td,
+        th {
+            font-size: 18px;
+        }
+    }
+}

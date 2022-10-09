@@ -1,0 +1,37 @@
+.form__label {
+  display: flex;
+
+  align-items: flex-start;
+}
+
+.form__input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 5px 5px 5px 0;
+
+  border: none;
+  border-bottom: 1px solid $black;
+}
+
+@supports selector(:focus-visible) {
+  .form__input:focus {
+    outline: none;
+    border-bottom: 1px solid $red;
+  }
+}
+
+.form__button {
+  width: 236px;
+
+  text-transform: uppercase;
+}
+
+@media(min-width: $widthTablet) {
+  .form__label {
+    align-items: center;
+  }
+
+  .form__button-container {
+    display: flex;
+  }
+}

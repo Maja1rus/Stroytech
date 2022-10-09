@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СИИР. Производство столярных изделий">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>СИИР. Производство столярных изделий</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/casper-bold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+  <header class="header">
+    <div class="header__corner"></div>
+    <div class="container header__container">
+      <div class="header__left">
+        <div class="header__div"></div>
+        <a class="header__logo" href="/">
+          <img width="143" height="24" src="img/logo.png" alt="Логотип компании">
+          <p class="header__info">15 лет создаем эффективную среду для плодотворной работы и отдыха</p>
+        </a>
+        <button class="header__burger" type="button">
+          <svg class="header__svg" width="20" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <button class="header__close header__close--closed" type="button">
+          <svg class="header__svg" width="20" height="20">
+            <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header__right">
+        <div class="header__upper">
+
+          <a class="header__calculator calculator" href="/calculator.html" title="Расчет стоимости услуг онлайн">
+            <svg width="30" height="33">
+            <use xlink:href="img/sprite_auto.svg#icon-calculator"></use>
+          </svg>
+            <span>Расчет стоимости услуг онлайн</span>
+          </a>
+
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+            <a class="header__tel" href="tel:+78124385525" title="+7 (812) 412-85-85">+7 (812) 438-55-25</a>
+          </div>
+
+        </div>
+        <nav class="header__lower nav nav--hidden">
+          <ul class="header__list">
+            <li class="header__item">
+              <div class="header__link open-submenu" href="/works.html" title="Услуги">
+                <a href="services.html">Услуги </a>
+                <svg width="13" height="7">
+                <use xlink:href="img/sprite_auto.svg#icon-open"></use>
+              </svg></div>
+              <div class="header__nav hidden">
+                <a class="header__nav-item" title="Общестроительные
+                работы" href="/works.html">Общестроительные работы</a>
+                <a class="header__nav-item" title="Монтаж и ремонт
+                инженерных систем" href="/montage.html">Монтаж и ремонт
+                инженерных систем</a>
+                <a class="header__nav-item" title="Разработка дизайна и
+                проектных решений" href="/works.html">Разработка дизайна и
+                проектных решений</a>
+                <a class="header__nav-item" title="Отделочные
+                работы" href="/works.html">Отделочные
+                работы</a>
+                <a class="header__nav-item" title="Генеральный
+                подряд" href="/works.html">Генеральный
+                подряд</a>
+                <a class="header__nav-item" title="Клининг" href="/works.html">Клининг</a>
+              </div>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="/about.html" title="О компании">О компании</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="/projects.html" title="Портфолио">Портфолио</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="/reviews.html" title="Отзывы">Отзывы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="/contacts.html" title="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <main class="main">
+    <section class="main-slider">
+      <h2 class="visually-hidden">Главный баннер</h2>
+      <div class="main-slider__container swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="overlay"></div>
+            <img class="main-slider__img" src="img/banner.jpg" width="400" height="188" alt="Главный баннер">
+            <a class="main-slider__info container" title="Подробнее" href="">
+
+              <span class="main-slider__span-big">15 лет</span>
+              <span class="main-slider__span-small">создаем эффективную среду для плодотворной работы и отдыха</span>
+              <div class="main-slider__button button">Подробнее</div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <div class="overlay"></div>
+            <img class="main-slider__img" src="img/banner-2.jpg" width="400" height="188" alt="Главный баннер">
+            <a class="main-slider__info container" title="Подробнее" href="">
+
+              <span class="main-slider__span-big">15 лет</span>
+              <span class="main-slider__span-small">создаем эффективную среду для плодотворной работы и отдыха</span>
+              <div class="main-slider__button button">Подробнее</div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <div class="overlay"></div>
+            <img class="main-slider__img" src="img/banner-3.jpg" width="400" height="188" alt="Главный баннер">
+            <a class="main-slider__info container" title="Подробнее" href="">
+
+              <span class="main-slider__span-big">15 лет</span>
+              <span class="main-slider__span-small">создаем эффективную среду для плодотворной работы и отдыха</span>
+              <div class="main-slider__button button">Подробнее</div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+    <section class="do">
+      <div class="container">
+        <h2 class="do__heading heading">Основные виды <br> деятельности</h2>
+        <ul class="do__items">
+          <li class="do__item" style="background-image:url('img/do-1.jpg')">
+            <div class="overlay"></div>
+            <a class="do__link" href="/works.html" title="Общестроительные работы">
+              <div class="do__container">
+                <div class="do__icon">
+                  <svg width="60" height="60">
+                  <use xlink:href="img/sprite_auto.svg#icon-do-1"></use>
+                </svg>
+                </div>
+                <h3 class="do__sub-heading">Общестроительные работы</h3>
+                <div class="do__button button">Смотреть</div>
+              </div>
+            </a>
+          </li>
+          <li class="do__item" style="background-image:url('img/do-2.jpg')">
+            <div class="overlay"></div>
+            <a class="do__link" href="/works.html" title="Общестроительные работы">
+              <div class="do__container">
+                <div class="do__icon">
+                  <svg width="60" height="60">
+                  <use xlink:href="img/sprite_auto.svg#icon-do-2"></use>
+                </svg>
+                </div>
+                <h3 class="do__sub-heading">Монтаж и ремонт инженерных систем</h3>
+                <div class="do__button button">Смотреть</div>
+              </div>
+            </a>
+          </li>
+          <li class="do__item" style="background-image:url('img/do-3.jpg')">
+            <div class="overlay"></div>
+            <a class="do__link" href="/works.html" title="Общестроительные работы">
+              <div class="do__container">
+                <div class="do__icon">
+                  <svg width="60" height="60">
+                  <use xlink:href="img/sprite_auto.svg#icon-do-3"></use>
+                </svg>
+                </div>
+                <h3 class="do__sub-heading">Разработка дизайна и проектных решений</h3>
+                <div class="do__button button">Смотреть</div>
+              </div>
+            </a>
+          </li>
+          <li class="do__item" style="background-image:url('img/do-4.jpg')">
+            <div class="overlay"></div>
+            <a class="do__link" href="" title="Общестроительные работы">
+              <div class="do__container">
+                <div class="do__icon">
+                  <svg width="60" height="60">
+                  <use xlink:href="img/sprite_auto.svg#icon-do-4"></use>
+                </svg>
+                </div>
+                <h3 class="do__sub-heading">Отделочные работы</h3>
+                <div class="do__button button">Смотреть</div>
+              </div>
+            </a>
+          </li>
+          <li class="do__item" style="background-image:url('img/do-5.jpg')">
+            <div class="overlay"></div>
+
+            <a class="do__link" href="" title="Общестроительные работы">
+              <div class="do__container">
+                <div class="do__icon">
+                  <svg width="60" height="60">
+                  <use xlink:href="img/sprite_auto.svg#icon-do-5"></use>
+                </svg>
+                </div>
+                <h3 class="do__sub-heading">Генеральный подряд</h3>
+                <div class="do__button button">Смотреть</div>
+              </div>
+            </a>
+          </li>
+          <li class="do__item" style="background-image:url('img/do-6.jpg')">
+
+            <div class="overlay"></div>
+            <a class="do__link" href="" title="Общестроительные работы">
+              <div class="do__container">
+                <div class="do__icon">
+                  <svg width="60" height="60">
+                  <use xlink:href="img/sprite_auto.svg#icon-do-6"></use>
+                </svg>
+                </div>
+                <h3 class="do__sub-heading">Клининг</h3>
+                <div class="do__button button">Смотреть</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="about__heading heading">О компании</h2>
+        <div class="about__container">
+          <div class="about__info">
+            <p class="about__p">Компания СТРОЙТЕК успешно работает и развивается с 1001 года. 167 коммерческих объектов реализовано, из них 30 - крупных, на площади более 1000 м2</p>
+            <p class="about__p">
+              Мы предоставляем своим заказчикам возможность передать все работы связанные с техническим перевооружением организации без отрыва собственных сотрудников от профильной деятельности и гарантированно получить оптимальное качественно-ценовое решение.</p>
+            <p class="about__p">
+              Применяя проверенные современные решения, собственный уникальным опыт, и интеллектуальным потенциал команды, мы успешно создаем комфортные условия, что в свою очередь повышает производительность ваших, предприятии.</p>
+          </div>
+          <div class="about__links">
+            <a class="about__link" href="" title="О компании">О компании</a>
+            <a class="about__link" href="" title="Отзывы">Отзывы</a>
+            <a class="about__link" href="" title="Портфолио">Портфолио</a>
+            <a class="about__calculator calculator" href="" title="Расчет стоимости услуг онлайн">
+              <svg width="30" height="33">
+            <use xlink:href="img/sprite_auto.svg#icon-calculator"></use>
+          </svg>
+              <span>Расчет стоимости услуг онлайн</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statistics">
+      <div class="container">
+        <h2 class="statistics__heading heading">Нами реализовано</h2>
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <div class="statistics__number"><span class="number number-1" data-max="108232">0</span> кв.м.</div>
+            <p class="statistics__p">Общая площадь реализованных проектов</p>
+          </li>
+          <li class="statistics__item">
+            <div class="statistics__number"><span class="number number-2" data-max="14000">0</span> кв.м.</div>
+            <p class="statistics__p">Площадь самого крупного проекта компании
+            </p>
+
+          </li>
+          <li class="statistics__item">
+            <div class="statistics__number">до <span class="number number-3" data-max="50">0</span></div>
+            <p class="statistics__p">Рабочих мест на одном проекте
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <h2 class="features__heading heading">Наши преимущества</h2>
+        <div class="features__container">
+          <div class="features__difference">
+            <div class="before-after" data-before-after>
+              <img class="features__img" src="img/before.jpg" alt="Фото до">
+              <img class="features__img" src="img/after.jpg" alt="Фото после">
+            </div>
+          </div>
+          <ul class="features__info">
+            <li class="features__item">
+              <span class="features__number">1</span>
+              <h3 class="features__sub-heading">гарантия на работы от 1 до 3 лет</h3>
+              <p class="features__p">В зависимости от материалов и видов работ</p>
+            </li>
+            <li class="features__item">
+              <span class="features__number">2</span>
+              <h3 class="features__sub-heading">соблюдение сроков</h3>
+              <p class="features__p">Мы готовы возместить до 1% от сметы за каждый день просрочки</p>
+            </li>
+            <li class="features__item">
+              <span class="features__number">3</span>
+              <h3 class="features__sub-heading">работы в сложных условиях</h3>
+              <div class="features__p">
+                <ul>
+                  <li>В застроенной части города</li>
+                  <li>В тёмное время суток</li>
+                  <li>В стеснённых условиях (местах большого скопления людей и механизмов (действующие предприятия))</li>
+                  <li>В автономном режиме, вдали от инфраструктуры</li>
+                  <li>Выполняем большие объемы работ</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="partners-russia">
+
+
+      <div class="partners__container">
+        <div class="russia">
+          <div class="container">
+            <h2 class="russia__heading heading">Мы работаем по всей России</h2>
+            <p class="russia__info">
+              и занимаем уверенные позиции на рынке отделки ренновации и реконструкции
+            </p>
+          </div>
+        </div>
+
+        <div class="partners">
+          <div class="container">
+            <h2 class="partners__heading heading">Наши партнеры</h2>
+            <div class="swiper-container partners-slider">
+              <ul class="partners__items swiper-wrapper">
+                <li class="partners__item swiper-slide">
+
+                  <img class="partners__picture lazyload" src="img/icons/partner-1.png" data-srcset="img/icons/partner-1.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-2.png" data-srcset="img/icons/partner-2.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-3.png" data-srcset="img/icons/partner-3.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-4.png" data-srcset="img/icons/partner-4.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-5.png" data-srcset="img/icons/partner-5.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-6.png" data-srcset="img/icons/partner-6.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+
+                </li>
+                <li class="partners__item swiper-slide">
+
+                  <img class="partners__picture lazyload" src="img/icons/partner-7.svg" data-srcset="img/icons/partner-7.svg" srcset="img/placeholder.svg" width="100" height="50" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-8.svg" data-srcset="img/icons/partner-8.svg" srcset="img/placeholder.svg" width="60" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-9.png" data-srcset="img/icons/partner-9.png" srcset="img/placeholder.svg" width="100" height="40" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-10.png" data-srcset="img/icons/partner-10.png" srcset="img/placeholder.svg" width="50" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-11.png" data-srcset="img/icons/partner-11.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+                  <img class="partners__picture lazyload" src="img/icons/partner-1.png" data-srcset="img/icons/partner-1.png" srcset="img/placeholder.svg" width="85" height="38" alt="РЖД" title="РЖД" />
+
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="stages">
+      <div class="container">
+        <h2 class="stages__heading heading">Как мы работаем</h2>
+        <ul class="stages__list">
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">1</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Оставьте заявку на нашем сайте или позвоните нам</h3>
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">2</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Выезд нашего специалиста для выяснения деталей и замера</h3>
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">3</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Составление сметы, согласование условий выполнения работ</h3>
+
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">4</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Подписание договора, оплата материалов</h3>
+
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">5</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Передача помещения</h3>
+
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">6</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Ремонт, еженедельные отчеты</h3>
+
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">7</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Сдача объекта, подписание акта</h3>
+
+          </li>
+          <li class="stages__item">
+            <div class="stages__circle">
+              <div class="stages__container"><span class="number">8</span> <span>этап</span>
+              </div>
+            </div>
+            <h3 class="stages__sub-heading">Оплата работ по договору</h3>
+
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="callback">
+      <div class="container">
+        <a class="callback__logo" href="/">
+          <img width="269" height="46" src="img/logo-grey-big.png" alt="Логотип компании">
+        </a>
+        <div class="callback__container">
+          <h2 class="callback__heading heading">Напишите нам</h2>
+          <div class="callback__small">и мы свяжемся с Вами в течении</div>
+          <div class="callback__big">
+            <div class="callback__number">30</div>
+            мин.
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <form class="form">
+            <input class="form__input" type="text" name="name" required placeholder="Ваше имя">
+            <input class="form__input" id="tel" type="tel" name="phone" required placeholder="Ваш номер телефона">
+            <div class="form__button-container">
+              <label class="form__label">
+                <input class="checkbox" type="checkbox" name="type" id="type" value="agree">
+                <span class="checkbox-indicator"></span>
+                <span class="checkbox-info">Согласен <a href="" title="обработку персональных данных"> на обработку персональных данных</a></span>
+              </label>
+
+              <button class="form__button button"><span>Отправить</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+
+      <h2 class="contacts__heading heading">Контакты</h2>
+      <div class="yandex-map">
+        <div data-map="map"></div>
+      </div>
+      <ul class="contacts__list container">
+        <li class="contacts__item">
+          <svg width="48" height="48">
+              <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
+            </svg>
+          <div class="contacts__info">191124 Санкт-Петербург, Смольный пр. 7</div>
+        </li>
+        <li class="contacts__item">
+          <svg width="48" height="48">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+          <div class="contacts__info">
+            <a class="contacts__link" href="tel:88124385525" title="8 (812) 438-55-25">8 (812) 438-55-25</a>
+            <a class="contacts__link" href="tel:89219158819" title="8(921) 915-88-19">8 (921) 915-88-19</a>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <svg width="48" height="48">
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            </svg>
+          <div class="contacts__info">
+            <a class="contacts__link" href="mailto:9158819@mail.ru" title="9158819@mail.ru">9158819@mail.ru</a>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__corner"></div>
+    <div class="container footer__container">
+      <div class="footer__upper">
+        <div class="footer__left">
+
+          <a class="footer__logo" href="/">
+            <img width="214" height="36" src="img/logo.png" alt="Логотип компании">
+          </a>
+          <div class="footer__contacts">
+            <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+            <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 412-85-85">+7 (812) 438-55-25</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <nav class="nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <div class="footer__link" href="#" title="Услуги">Услуги</div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" title="О компании">О компании</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" title="Портфолио">Портфолио</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" title="Отзывы">Отзывы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#" title="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__lower">
+        © Copyright 2021
+      </div>
+    </div>
+  </footer>
+
+  <section class="modal modal--closed modal--success" data-modal-content="2">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
+        <img class="modal__tick" src="img/icons/icon-tick.svg" width="114" height="114" alt="Значок галка">
+        <h2 class="modal__heading heading">Письмо отправлено!</h2>
+        <p class="modal__info">Наш специалист вам перезвонит</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--closed modal--fail" data-modal-content="3">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
+        <h2 class="modal__heading heading">Извините, заявка не отправлена</h2>
+        <p class="modal__info">Позвоните нам по номеру +7 (812) 412-85-85</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
